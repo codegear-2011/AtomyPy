@@ -19,5 +19,5 @@ class Handler(BaseHTTPRequestHandler):
 def run_server(router, host, port):
     Handler.router = router
     server = HTTPServer((host, port), Handler)
-    print(f"Atomy running on http://{host}:{port}")
+    print(f"MicroJet running on http://{host}:{port}")
     server.serve_forever()
